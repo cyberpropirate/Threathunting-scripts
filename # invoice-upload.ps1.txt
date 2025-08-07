@@ -1,0 +1,5 @@
+# invoice-upload.ps1
+New-Item -Path "$env:USERPROFILE\Desktop\invoice-data.xlsx" -ItemType File
+Start-Sleep -Seconds 2
+Add-Content -Path "$env:USERPROFILE\Desktop\invoice-log.txt" -Value "Fake invoice uploaded on $(Get-Date)"
+
